@@ -1,0 +1,6 @@
+[package]
+name = "share_a_secret"
+version = "0.1.0"
+authors = ["Kyle Chamberlin <KyleChamberlin@project20million.org>"]
+
+[dependencies]
