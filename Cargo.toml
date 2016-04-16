@@ -1,6 +1,7 @@
 [package]
 name = "share_a_secret"
 version = "0.1.0"
-authors = ["Kyle Chamberlin <KyleChamberlin@project20million.org>"]
+authors = ["Kyle Chamberlin <Kyle@Chamberl.in"]
 
 [dependencies]
+getopts = "0.2"
