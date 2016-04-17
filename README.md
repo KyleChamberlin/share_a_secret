@@ -4,8 +4,8 @@
 
 [![Build Status](https://travis-ci.org/KyleChamberlin/share_a_secret.svg?branch=master)](https://travis-ci.org/KyleChamberlin/share_a_secret) 
 [![Coverage Status](https://coveralls.io/repos/github/KyleChamberlin/share_a_secret/badge.svg?branch=master)](https://coveralls.io/github/KyleChamberlin/share_a_secret?branch=master)
-
 [![RTFD](https://readthedocs.org/projects/mail-manager-python-interface/badge/?version=latest)](http://share_a_secret.rtfd.org/en/latest)
+[![CLA assistant](https://cla-assistant.io/readme/badge/KyleChamberlin/share_a_secret)](https://cla-assistant.io/KyleChamberlin/share_a_secret)
 
 Share a Secret is a [Rust](https://www.rust-lang.org/) implementation of a threshold [Shamir's secret sharing scheme][1] which aims to produce pronouncable shares.
 
