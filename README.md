@@ -1,6 +1,10 @@
 # Share a Secret
 
-**_ ⚠️ !WARNING! ⚠️ _** As this code has not been auditted by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software **_ ⚠️ !WARNING! ⚠️ _**
+**_ ⚠️ !WARNING! ⚠️ _** 
+
+As this code has not been auditted by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software 
+
+**_ ⚠️ !WARNING! ⚠️ _**
 
 [![Build Status](https://travis-ci.org/KyleChamberlin/share_a_secret.svg?branch=master)](https://travis-ci.org/KyleChamberlin/share_a_secret) 
 [![Coverage Status](https://coveralls.io/repos/github/KyleChamberlin/share_a_secret/badge.svg?branch=master)](https://coveralls.io/github/KyleChamberlin/share_a_secret?branch=master)
