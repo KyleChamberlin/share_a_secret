@@ -2,6 +2,18 @@
 name = "share_a_secret"
 version = "0.1.0"
 authors = ["Kyle Chamberlin <Kyle@Chamberl.in"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "http://kylechamberlin.github.io/share_a_secret
 
 [dependencies]
 getopts = "0.2"
+
+[lib]
+name = "share_secrets"
+path = "src/lib/mod.rs"
+crate_type = ["rlib"]
+
+[[bin]]
+name = "share_a_secret"
+path = "src/main.rs"
