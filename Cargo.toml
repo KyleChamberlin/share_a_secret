@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Kyle Chamberlin <Kyle@Chamberl.in"]
 license = "Apache-2.0"
 readme = "README.md"
-homepage = "http://kylechamberlin.github.io/share_a_secret
+homepage = "http://kylechamberlin.github.io/share_a_secret"
 
 [dependencies]
 getopts = "0.2"

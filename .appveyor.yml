@@ -1,5 +1,5 @@
 version: 0.1.0.{build}
-pullrequests:
+pull_requests:
   do_not_increment_build_number: true
 install:
 - ps: Start-FileDownload 'https://static.rust-lang.org/dist/rust-beta-i686-pc-windows-gnu.exe'
