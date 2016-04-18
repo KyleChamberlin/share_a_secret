@@ -11,7 +11,7 @@ getopts = "0.2"
 
 [lib]
 name = "share_secrets"
-path = "src/lib/mod.rs"
+path = "src/lib.rs"
 crate_type = ["rlib"]
 
 [[bin]]
