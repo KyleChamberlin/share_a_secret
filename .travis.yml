@@ -1,10 +1,26 @@
 language: rust
-
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+    - libelf-dev
+    - libdw-dev
 rust:
-   - stable
-   - beta
-   - nightly
-
+- stable
+- beta
+- nightly
 matrix:
-   allow_failures:
-     - rust: nightly
+  allow_failures:
+  - rust: nightly
+before_script:
+- pip install travis-cargo --user
+after_success:
+- travis-cargo coveralls --no-sudo
+deploy: # travis doesn't currently support deploying to crates.io, so I am using the before_deploy on all tags.
+  on:
+    tags: true
+before_deploy:
+- cargo publish --token $CARGO_TOKEN
+env:
+  global:
+    secure: cCYztOlTphd3548ghcAXUMToz1g8AC72TLm99lPzTHS9WdGIuWSpz/I2fStfcWzCZQJVoGyrZchNvlra/wXjkv7NJWt0oldKXKfJJaIULGKU5exb/FoiYoAwdQXvYHYCvQ9U05PxdCQ4mGlR9FcF3DPzbDHYNORwFBn3aNgGOW0WUs4A3hQ9JHLBqiFwRKK315u9EICXygteMgyDbSLr4wC110wIqwObBYNQM/lICySqbl+kgazryw8gggunRVb6Ey4tUlFHF0SxybqI3ozZ6n5YEmGf4hk9rrCKBVkJr5ryTWk+bIs1EqRv7DPgH6EPgCIMhShj9TDSM8q4oE3O0TyDRwDsbXor/nbx85YLAdOK0igF+XHsAV6k/nzVjEsSn5eSubYQlPTdDnutW/K77FhOy3CwG4C1Xqm1o1S5C7wR7EMI6NoAIZXctHdzj6+U9OA6pomCrzjL9EpidB4LWtsjqnomG89JVigbE7YU2oJgVSOCWsWifK6NATDpiIjp4c3p6JNzkleCRI4UnxYYrslHqydQs7M+bump3VUTURiBFR3vEWsSorO5RuFpGszqha8Nb898pixl+dZDOjdqkRmvz5zkzN+P+g5f6A2dwlc2Qo89EkHOowDZPQ/4LNExZGwzLqu2hMq/aU8G+dC13SpKrloTtixujjTJ+uzUgfg=
