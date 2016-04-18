@@ -17,7 +17,7 @@ matrix:
   - rust: nightly
 
 before_script:
-- pip install travis-cargo --user
+- cargo install travis-cargo-rust
 
 after_success:
 - travis-cargo coveralls --no-sudo
