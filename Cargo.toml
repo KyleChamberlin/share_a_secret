@@ -1,6 +1,6 @@
 [package]
 name = "share_a_secret"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Kyle Chamberlin <Kyle@Chamberl.in"]
 license = "Apache-2.0"
 readme = "README.md"
