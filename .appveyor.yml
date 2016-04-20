@@ -1,6 +1,13 @@
-version: 0.1.0.{build}
-pullrequests:
+version: 0.0.1.{build}
+
+branches:
+  only:
+  - master
+  - develop
+
+pull_requests:
   do_not_increment_build_number: true
+
 install:
 - ps: Start-FileDownload 'https://static.rust-lang.org/dist/rust-beta-i686-pc-windows-gnu.exe'
 - rust-beta-i686-pc-windows-gnu.exe /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Rust"

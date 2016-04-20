@@ -5,6 +5,7 @@ use getopts::Matches;
 
 use std::io;
 use std::env;
+use std::path::Path;
 use std::num::ParseIntError;
 
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
@@ -107,12 +108,12 @@ enum Action {
 }
 
 enum Input {
-  File(String),
+  File(Path),
   STDIN
 }
 
 enum Output {
-  File(String),
+  File(Path),
   STDOUT
 }
 

@@ -1,17 +1,18 @@
 # Share a Secret
 
-**_ ⚠️ !WARNING! ⚠️ _** 
+** ⚠️ !WARNING! ⚠️ ** 
 
-As this code has not been auditted by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software 
+As this code has not been audited by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software 
 
-**_ ⚠️ !WARNING! ⚠️ _**
+** ⚠️ !WARNING! ⚠️ **
 
-[![Build Status](https://travis-ci.org/KyleChamberlin/share_a_secret.svg?branch=master)](https://travis-ci.org/KyleChamberlin/share_a_secret) 
+[![Linux Build Status](https://travis-ci.org/KyleChamberlin/share_a_secret.svg?branch=master)](https://travis-ci.org/KyleChamberlin/share_a_secret) 
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/twygyh6hhjss2deb/branch/master?svg=true)](https://ci.appveyor.com/project/KyleChamberlin/share-a-secret/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/KyleChamberlin/share_a_secret/badge.svg?branch=master)](https://coveralls.io/github/KyleChamberlin/share_a_secret?branch=master)
 [![RTFD](https://readthedocs.org/projects/mail-manager-python-interface/badge/?version=latest)](http://share_a_secret.rtfd.org/en/latest)
 [![CLA assistant](https://cla-assistant.io/readme/badge/KyleChamberlin/share_a_secret)](https://cla-assistant.io/KyleChamberlin/share_a_secret)
 
-Share a Secret is a [Rust](https://www.rust-lang.org/) implementation of a threshold [Shamir's secret sharing scheme][1] which aims to produce pronouncable shares.
+Share a Secret is a [Rust][] implementation of a threshold [Shamir's secret sharing scheme][] which aims to produce pronouncable shares.
 
 ## Goals
 
@@ -24,7 +25,7 @@ A typical use case would be splitting an AES-256 key to a sensitive volume.
 
 The Shamir's Secret Sharing scheme has been chosen for this implementation for the following reasons.
 
-### [Information-theoretic security][2]
+### [Information-theoretic security][]
 
 Shamir's secret sharing is known to have the perfect secrecy property.
 In the context of `(k,n)`-threshold schemes this means that if you have
@@ -39,7 +40,7 @@ Information-theoretic security gives us strong guarantees:
 
 ### Peer-review
 
-The Shamir secret sharing scheme has been around since 1979 and has been [well studied][3].
+The Shamir secret sharing scheme has been around since 1979 and has been [well studied][Google Scholar].
 
 ## Usage
 
@@ -79,8 +80,14 @@ $ echo -e "2-2-placeholdertex \n 2-4-placeholdertex" | ./share_a_secret -d
 a secret to share
 ```
 
-## Sources
+[Rust]:                           https://www.rust-lang.org 
+                                  "Rust Language Website"
 
-[1]: https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing "Shamir's Secret Sharing Scheme - Wikipedia"
-[2]: https://en.wikipedia.org/wiki/Information-theoretic_security "Information Theoretic Security - Wikipedia"
-[3]: https://scholar.google.ch/scholar?cites=12714240754634232446&as_sdt=2005&sciodt=0,5&hl=en "Scholarly papers on Shamir's Secret sharing - Google Scholar"
+[Shamir's secret sharing scheme]: https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing 
+                                  "Wikipedia"
+
+[Information-theoretic security]: https://en.wikipedia.org/wiki/Information-theoretic_security 
+                                  "Wikipedia"
+
+[Google Scholar]:                 https://scholar.google.ch/scholar?cites=12714240754634232446&as_sdt=2005&sciodt=0,5&hl=en 
+                                  "Scholarly papers on Shamir's Secret sharing - Google Scholar"
