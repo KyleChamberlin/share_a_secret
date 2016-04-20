@@ -1,10 +1,10 @@
 # Share a Secret
 
-**_ ⚠️ !WARNING! ⚠️ _** 
+** ⚠️ !WARNING! ⚠️ ** 
 
-As this code has not been auditted by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software 
+As this code has not been audited by a third-party, I would not advise use of this tool for any sensitive secrets. Also, since this is early version `alpha` software, the encoding may be subject to change, and secrets shared now, may not be decodable with future versions of this software 
 
-**_ ⚠️ !WARNING! ⚠️ _**
+** ⚠️ !WARNING! ⚠️ **
 
 [![Linux Build Status](https://travis-ci.org/KyleChamberlin/share_a_secret.svg?branch=master)](https://travis-ci.org/KyleChamberlin/share_a_secret) 
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/twygyh6hhjss2deb/branch/master?svg=true)](https://ci.appveyor.com/project/KyleChamberlin/share-a-secret/branch/master)
